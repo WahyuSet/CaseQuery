@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bgMarcus" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e1e24"/>
+      <stop offset="100%" stop-color="#050a0d"/>
+    </linearGradient>
+    <linearGradient id="skinMarcus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2ba9c"/>
+      <stop offset="100%" stop-color="#cb9674"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="400" height="500" fill="url(#bgMarcus)"/>
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#334155" stroke-dasharray="4,4"/>
+  <line x1="0" y1="150" x2="400" y2="150" stroke="#334155" stroke-dasharray="4,4"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="360" y="105" fill="#64748b" font-family="'Fira Code', monospace" font-size="11">6'0"</text>
+
+  <!-- Casual Tech Hoodie -->
+  <path d="M 90 500 L 130 330 L 270 330 L 310 500 Z" fill="#1e293b" stroke="#00f0ff" stroke-width="1"/>
+  <circle cx="200" cy="360" r="16" fill="#0f172a"/>
+
+  <!-- Head & Hair (Messy curls) -->
+  <rect x="180" y="260" width="40" height="60" fill="#cb9674"/>
+  <ellipse cx="200" cy="205" rx="55" ry="68" fill="url(#skinMarcus)"/>
+  <path d="M 140 180 Q 150 110 200 120 Q 250 110 260 180 Q 240 140 200 140 Q 160 140 140 180 Z" fill="#332211"/>
+
+  <!-- Eyeglasses (Cyan frames) -->
+  <rect x="155" y="185" width="36" height="24" rx="4" fill="none" stroke="#00f0ff" stroke-width="2.5"/>
+  <rect x="209" y="185" width="36" height="24" rx="4" fill="none" stroke="#00f0ff" stroke-width="2.5"/>
+  <line x1="191" y1="197" x2="209" y2="197" stroke="#00f0ff" stroke-width="2.5"/>
+  <circle cx="173" cy="197" r="4" fill="#0f172a"/>
+  <circle cx="227" cy="197" r="4" fill="#0f172a"/>
+
+  <!-- Plaque Bar -->
+  <rect x="50" y="430" width="300" height="55" rx="6" fill="#030712" stroke="#10b981" stroke-width="1.5"/>
+  <text x="200" y="455" text-anchor="middle" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="16" font-weight="bold">MARCUS VANCE</text>
+  <text x="200" y="475" text-anchor="middle" fill="#10b981" font-family="'Fira Code', monospace" font-size="11">LEAD AI ARCHITECT // ID: NEXA-5520</text>
+</svg>

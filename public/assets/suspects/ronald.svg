@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bgRonald" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1814"/>
+      <stop offset="100%" stop-color="#0a0807"/>
+    </linearGradient>
+    <linearGradient id="skinRonald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8bf9c"/>
+      <stop offset="100%" stop-color="#cf9f7a"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="400" height="500" fill="url(#bgRonald)"/>
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#334155" stroke-dasharray="4,4"/>
+  <line x1="0" y1="150" x2="400" y2="150" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="360" y="105" fill="#64748b" font-family="'Fira Code', monospace" font-size="11">6'2"</text>
+
+  <!-- Luxury CEO Suit with Gold Tie -->
+  <path d="M 90 500 L 130 320 L 270 320 L 310 500 Z" fill="#0f172a" stroke="#d97706" stroke-width="1.5"/>
+  <polygon points="175,320 200,390 225,320" fill="#ffffff"/>
+  <polygon points="195,350 205,350 212,470 188,470" fill="#f59e0b"/>
+
+  <!-- Head & Silver Hair -->
+  <rect x="180" y="260" width="40" height="60" fill="#cf9f7a"/>
+  <ellipse cx="200" cy="205" rx="56" ry="68" fill="url(#skinRonald)"/>
+  <path d="M 135 185 Q 170 115 200 120 Q 230 115 265 185 Q 240 140 200 140 Q 160 140 135 185 Z" fill="#94a3b8"/>
+
+  <!-- Features -->
+  <path d="M 165 188 Q 180 182 192 186" stroke="#334155" stroke-width="2.5" fill="none"/>
+  <path d="M 208 186 Q 220 182 235 188" stroke="#334155" stroke-width="2.5" fill="none"/>
+  <circle cx="178" cy="196" r="4" fill="#0f172a"/>
+  <circle cx="222" cy="196" r="4" fill="#0f172a"/>
+  <path d="M 188 245 Q 200 248 212 245" stroke="#78350f" stroke-width="2" fill="none"/>
+
+  <!-- Deceased / Crime Victim Banner -->
+  <rect x="50" y="430" width="300" height="55" rx="6" fill="#1c1917" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="200" y="455" text-anchor="middle" fill="#ef4444" font-family="'Outfit', sans-serif" font-size="16" font-weight="bold">RONALD STERLING [DECEASED]</text>
+  <text x="200" y="475" text-anchor="middle" fill="#fca5a5" font-family="'Fira Code', monospace" font-size="11">CHIEF EXECUTIVE OFFICER // VICTIM</text>
+</svg>

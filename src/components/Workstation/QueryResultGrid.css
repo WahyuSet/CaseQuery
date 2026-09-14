@@ -1,0 +1,137 @@
+/* QueryResultGrid.css - Clean Forensic Data Table */
+
+.grid-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+.grid-empty-state {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-primary);
+  color: var(--text-muted);
+  padding: 32px 24px;
+  text-align: center;
+  gap: 6px;
+}
+
+.grid-empty-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+
+.grid-empty-desc {
+  font-size: 13px;
+  max-width: 48ch;
+  line-height: 1.5;
+}
+
+.grid-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 12px;
+}
+
+.grid-status-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.grid-exec-time {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.grid-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.grid-table-scroll {
+  flex: 1;
+  overflow: auto;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.result-th {
+  padding: 8px 12px;
+  color: var(--text-secondary);
+  font-weight: 700;
+  white-space: nowrap;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  border-right: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.result-tr {
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.1s ease;
+}
+
+.result-tr:hover {
+  background-color: var(--accent-light);
+}
+
+.result-td {
+  padding: 6px 12px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  border-right: 1px solid var(--border-subtle);
+}
+
+.result-td-num {
+  color: var(--text-muted);
+  font-size: 11px;
+  width: 36px;
+}
+
+.result-td-null {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.btn-pin {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 3px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  transition: all 0.15s ease;
+}
+
+.btn-pin:hover {
+  color: var(--accent);
+  background-color: var(--accent-light);
+}

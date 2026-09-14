@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="bgMaya" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#181329"/>
+      <stop offset="100%" stop-color="#080712"/>
+    </linearGradient>
+    <linearGradient id="skinMaya" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fad4be"/>
+      <stop offset="100%" stop-color="#e8b99c"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="400" height="500" fill="url(#bgMaya)"/>
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#334155" stroke-dasharray="4,4"/>
+  <line x1="0" y1="150" x2="400" y2="150" stroke="#334155" stroke-dasharray="4,4"/>
+  <line x1="0" y1="200" x2="400" y2="200" stroke="#334155" stroke-dasharray="4,4"/>
+  <text x="360" y="155" fill="#64748b" font-family="'Fira Code', monospace" font-size="11">5'7"</text>
+  <text x="360" y="205" fill="#64748b" font-family="'Fira Code', monospace" font-size="11">5'4"</text>
+
+  <!-- Corporate Blazer (Wine/Burgundy) -->
+  <path d="M 100 500 L 140 320 L 260 320 L 300 500 Z" fill="#3b0724" stroke="#e11d48" stroke-width="1"/>
+  <polygon points="175,320 200,400 225,320" fill="#f8fafc"/>
+  
+  <!-- Head & Hair (Long sleek black hair) -->
+  <rect x="180" y="260" width="40" height="60" fill="#e8b99c"/>
+  <ellipse cx="200" cy="205" rx="55" ry="70" fill="url(#skinMaya)"/>
+  <path d="M 130 180 Q 200 100 270 180 L 280 340 L 250 340 L 255 220 Q 200 130 145 220 L 150 340 L 120 340 Z" fill="#09090b"/>
+
+  <!-- Facial Features -->
+  <path d="M 165 188 Q 180 183 192 188" stroke="#09090b" stroke-width="2.5" fill="none"/>
+  <path d="M 208 188 Q 220 183 235 188" stroke="#09090b" stroke-width="2.5" fill="none"/>
+  <ellipse cx="178" cy="196" rx="5" ry="4" fill="#09090b"/>
+  <ellipse cx="222" cy="196" rx="5" ry="4" fill="#09090b"/>
+  <path d="M 200 196 L 198 222 L 204 222" stroke="#be7a5a" stroke-width="2" fill="none"/>
+  <path d="M 188 245 Q 200 248 212 245" stroke="#9f1239" stroke-width="2.5" fill="none"/>
+
+  <!-- Plaque Bar -->
+  <rect x="50" y="430" width="300" height="55" rx="6" fill="#030712" stroke="#e11d48" stroke-width="1.5"/>
+  <text x="200" y="455" text-anchor="middle" fill="#ffffff" font-family="'Outfit', sans-serif" font-size="16" font-weight="bold">MAYA LIN</text>
+  <text x="200" y="475" text-anchor="middle" fill="#f43f5e" font-family="'Fira Code', monospace" font-size="11">CHIEF FINANCIAL OFFICER // ID: NEXA-1044</text>
+</svg>

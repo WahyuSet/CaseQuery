@@ -1,0 +1,156 @@
+/* EvidenceModal.css - Clean Evidence Inspection Modal */
+
+.evidence-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.evidence-modal-card {
+  max-width: 780px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-modal);
+}
+
+.evidence-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--bg-secondary);
+}
+
+.evidence-header-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.evidence-modal-title {
+  font-size: 17px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.evidence-modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 24px;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+@media (max-width: 680px) {
+  .evidence-modal-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.evidence-image-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.evidence-photo-box {
+  width: 100%;
+  height: 260px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--bg-dark-container);
+  border: 1px solid var(--border-subtle);
+}
+
+.evidence-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.evidence-meta-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.evidence-details-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.evidence-section-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.evidence-description-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.evidence-notes-box {
+  padding: 12px 14px;
+  border-left: 3px solid var(--accent);
+  background-color: var(--accent-light);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.evidence-notes-box h4 {
+  font-size: 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 4px 0;
+}
+
+.evidence-notes-text {
+  font-size: 13px;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.suggested-query-box {
+  padding: 12px 14px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+.suggested-query-code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  display: block;
+  word-break: break-all;
+  margin-top: 4px;
+}
+
+.evidence-modal-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  padding-top: 12px;
+}

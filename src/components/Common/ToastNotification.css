@@ -1,0 +1,72 @@
+/* ToastNotification.css - Clean Clue Toast Alert */
+
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid var(--success);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-lg);
+  max-width: 400px;
+  animation: slide-toast 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slide-toast {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.toast-body {
+  flex: 1;
+}
+
+.toast-tag {
+  font-size: 11px;
+  color: var(--success);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.toast-message {
+  font-size: 13px;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.toast-submessage {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.toast-close-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.toast-close-btn:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+}
