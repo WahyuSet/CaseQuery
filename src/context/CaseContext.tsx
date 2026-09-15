@@ -3,7 +3,7 @@ import type { CaseManifest, EvidenceItem, QueryExecutionResult } from '../cases/
 import { case01Manifest } from '../cases/case01/case01Data'
 import { sqlEngine } from '../services/sqlEngine'
 
-export type AppView = 'STAGE_SELECT' | 'CRIME_SCENE' | 'WORKSTATION' | 'VERDICT'
+export type AppView = 'LANDING' | 'STAGE_SELECT' | 'CRIME_SCENE' | 'WORKSTATION' | 'VERDICT'
 
 export interface ToastData {
   title: string
@@ -35,6 +35,8 @@ interface CaseContextType {
   verdictResult: VerdictResult | null
   // Actions
   setActiveView: (view: AppView) => void
+  openLanding: () => void
+  openStageSelect: () => void
   inspectEvidence: (evidenceId: string) => void
   closeEvidenceModal: () => void
   openWorkstation: (initialSql?: string) => void
@@ -56,7 +58,7 @@ const CaseContext = createContext<CaseContextType | undefined>(undefined)
 
 export const CaseProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [activeCase] = useState<CaseManifest>(case01Manifest)
-  const [activeView, setActiveView] = useState<AppView>('STAGE_SELECT')
+  const [activeView, setActiveView] = useState<AppView>('LANDING')
   const [selectedEvidence, setSelectedEvidence] = useState<EvidenceItem | null>(null)
   const [unlockedEvidenceIds, setUnlockedEvidenceIds] = useState<string[]>(() => {
     return activeCase.evidenceList.filter((e) => e.unlockedByDefault).map((e) => e.id)
@@ -137,6 +139,14 @@ export const CaseProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }
 
   const returnToStageSelect = () => {
+    setActiveView('STAGE_SELECT')
+  }
+
+  const openLanding = () => {
+    setActiveView('LANDING')
+  }
+
+  const openStageSelect = () => {
     setActiveView('STAGE_SELECT')
   }
 
@@ -255,6 +265,8 @@ export const CaseProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isAccusationModalOpen,
         verdictResult,
         setActiveView,
+        openLanding,
+        openStageSelect,
         inspectEvidence,
         closeEvidenceModal,
         openWorkstation,
